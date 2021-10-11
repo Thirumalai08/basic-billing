@@ -9,7 +9,7 @@ import { GlobalContext } from "../store/GlobalState";
 function NewHome() {
     const history = useHistory();
     // react hook form
-    const { handleSubmit, register, control, reset } = useForm({
+    const { handleSubmit, register, reset } = useForm({
         mode: "all",
         reValidateMode: "onBlur",
         defaultValues: {
@@ -21,7 +21,7 @@ function NewHome() {
     const { item, totalAmount, removeItem, addItem, customerDetails, addData } = useContext(GlobalContext);
     // select option
     const [selectedOption, setSelectedOption] = useState("");
-    const [taxValue, setTaxValue] = useState(0);
+    // const [taxValue, setTaxValue] = useState(0);
 
     const handleChange1 = (s) => {
         console.log("......................", s.target.value);
@@ -32,7 +32,7 @@ function NewHome() {
     const filteredOptions = options2.filter((o) => o.link === selectedOption);
     // customer submit
     const handleCustomer = async (d) => {
-        const id = uuidv4();
+        // const id = uuidv4();
         const newDetails = {
             customerName: d.customerName,
             customerVehicleNumber: d.customerVehicleNumber,
@@ -58,11 +58,11 @@ function NewHome() {
     };
     console.log("Items>>>>>>>>>>>>", item);
     console.log("Customer Details", customerDetails);
-    const calculateGST = () => {
-        const result = Number(totalAmount) * (28 / 100);
-        console.log(result);
-        setTaxValue(result + totalAmount);
-    };
+    // const calculateGST = () => {
+    //     const result = Number(totalAmount) * (28 / 100);
+    //     console.log(result);
+    //     setTaxValue(result + totalAmount);
+    // };
     //
     const serviceNameText = register("serviceName");
     // calculate gst
@@ -198,7 +198,7 @@ function NewHome() {
                                                         className="btn-close"
                                                         onClick={() => {
                                                             removeItem(i.id);
-                                                            setTaxValue(0);
+                                                            // setTaxValue(0);
                                                         }}
                                                     ></button>
                                                 </div>

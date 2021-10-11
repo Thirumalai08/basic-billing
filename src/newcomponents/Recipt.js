@@ -1,20 +1,19 @@
-import { StyleSheet } from "@react-pdf/renderer";
 import React, { useContext, useRef } from "react";
 import { useReactToPrint } from "react-to-print";
 import { GlobalContext } from "../store/GlobalState";
 import "./scss/recipt.scss";
 
-const styles = StyleSheet.create({
-    page: {
-        // flexDirection: "row",
-        backgroundColor: "#E4E4E4",
-    },
-    section: {
-        margin: 10,
-        padding: 10,
-        flexGrow: 1,
-    },
-});
+// const styles = StyleSheet.create({
+//     page: {
+//         // flexDirection: "row",
+//         backgroundColor: "#E4E4E4",
+//     },
+//     section: {
+//         margin: 10,
+//         padding: 10,
+//         flexGrow: 1,
+//     },
+// });
 
 function Recipt() {
     const componentRef = useRef();
