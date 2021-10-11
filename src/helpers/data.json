@@ -1,0 +1,48 @@
+[
+    {
+        "orderId": "ORD001",
+        "contact_details": {
+            "name": "Nambi",
+            "phone": "+91-8189958658",
+            "address": "154, Natchathira Nagar, 4th cross street, Pudukottai Road",
+            "city": "Thanjavur",
+            "pincode": "613005",
+            "state": "Tamil Nadu"
+        },
+        "service_details": [
+            {
+                "serviceId": 1,
+                "serviceName": "Wheel Alignment",
+                "serviceCost": 300
+            },
+            {
+                "serviceId": 2,
+                "serviceName": "Water Wash",
+                "serviceCost": 350
+            }
+        ]
+    },
+    {
+        "orderId": "ORD002",
+        "contact_details": {
+            "name": "Nambi",
+            "phone": "+91-8189958658",
+            "address": "154, Natchathira Nagar, 4th cross street, Pudukottai Road",
+            "city": "Thanjavur",
+            "pincode": "613005",
+            "state": "Tamil Nadu"
+        },
+        "service_details": [
+            {
+                "serviceId": 1,
+                "serviceName": "Wheel Balancing",
+                "serviceCost": 200
+            },
+            {
+                "serviceId": 2,
+                "serviceName": "Wheel Alignment",
+                "serviceCost": 350
+            }
+        ]
+    }
+]
